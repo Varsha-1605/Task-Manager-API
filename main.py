@@ -95,6 +95,11 @@ def health_check():
     """Basic health check endpoint."""
     return {"status": "ok", "message": "Task Manager API is running"}
 
+@app.get("/welcome", tags=["Welcome"])
+def welcome():
+    """Welcome message."""
+    return {"message": "Welcome to the Task Manager API"}
+
 
 @app.get("/tasks", response_model=list[Task], tags=["Tasks"])
 def list_tasks(
