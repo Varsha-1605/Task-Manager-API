@@ -1,0 +1,11 @@
+[project]
+name = "ci-cd-pipeline"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "fastapi[standard]>=0.141.1",
+    "pydantic>=2.13.5",
+    "uvicorn>=0.53.0",
+]
